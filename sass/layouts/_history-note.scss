@@ -1,0 +1,13 @@
+.history-note__pre-title-slave {
+  margin-bottom: 70px;
+  margin-left: 80px;
+}
+
+.history-note__list {
+}
+
+.history-note__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

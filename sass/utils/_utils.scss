@@ -43,10 +43,16 @@
 }
 
 .visually-hidden {
-  height: 1px;
+  position: absolute;
   width: 1px;
+  height: 1px;
   margin: -1px;
+  border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .add-line {
@@ -58,6 +64,6 @@
     top: 6px;
     height: 1px;
     width: 60px;
-    background-color: rgba(157, 164, 189, 0.6);
+    background-color: currentColor;
   }
 }

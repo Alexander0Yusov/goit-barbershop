@@ -9,10 +9,13 @@ header {
 
 .header-wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .burger-icon {
-  margin-top: 8px;
+  display: inline-flex;
   fill: $white;
+
+  cursor: pointer;
 }
