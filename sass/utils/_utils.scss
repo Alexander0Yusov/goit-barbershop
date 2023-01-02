@@ -1,13 +1,16 @@
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  // outline: 2px solid tomato;
+  padding: 0 5px;
+  outline: 1px solid tomato;
 
-  @media screen and(max-width:479px) {
-    width: 100%;
+  width: 100%;
+
+  @media screen and(min-width:320px) {
+    padding: 0 20px;
   }
 
   @media screen and(min-width:480px) {
+    padding: 0 31px;
     width: 480px;
   }
 
@@ -21,23 +24,16 @@
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 84px;
+  padding-bottom: 84px;
 
   @media screen and(max-width:1199px) {
-    padding: 60px 0;
+    //padding: 60px 0;
   }
 }
 
 .no-padding {
   padding: 0 0;
-}
-
-.btn {
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: $my-blue;
-  }
 }
 
 .is-hidden {
@@ -51,4 +47,17 @@
   width: 1px;
   margin: -1px;
   padding: 0;
+}
+
+.add-line {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -80px;
+    top: 6px;
+    height: 1px;
+    width: 60px;
+    background-color: rgba(157, 164, 189, 0.6);
+  }
 }

@@ -1,5 +1,18 @@
 @import "./base/defaults";
 @import "./base/vars";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./utils/utils";
 
 @import "./components/logo";
+@import "./components/button";
+@import "./components/pre-title";
+@import "./components/title-h1";
+@import "./components/title-h2";
+@import "./layouts/mobile-menu";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/prices";
+
+@import "./layouts/masters";
