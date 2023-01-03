@@ -17,5 +17,12 @@ header {
   display: inline-flex;
   fill: $white;
 
+  transition: fill 300ms linear;
+
+  &:hover,
+  &:focus {
+    fill: $primary-bright;
+  }
+
   cursor: pointer;
 }

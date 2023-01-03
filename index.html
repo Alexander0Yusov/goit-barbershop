@@ -28,41 +28,13 @@
         </a>
 
         <svg
-          type="button"
-          class="burger-icon"
+          type="button "
+          class="burger-icon js-open-menu"
           height="40"
           width="40"
-          aria-label="logo"
         >
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
-      </div>
-
-      <div class="mobile-menu">
-        <nav class="navigation">
-          <ul>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li><a href="">Services and prices</a></li>
-            <li><a href="">Barbers</a></li>
-            <li><a href="">Contacts</a></li>
-          </ul>
-        </nav>
-
-        <div class="header__contacts">
-          <a href="" class="contacts__phone">+38 044 111 11 11</a>
-          <button class="contacts__button">online-booking</button>
-        </div>
-
-        <ul class="header__socials">
-          <li class="header__socials-item">
-            <a href="" class="header__socials-link">Instagram</a>
-          </li>
-          <li class="header__socials-item">
-            <a href="" class="header__socials-link">Youtube</a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -111,7 +83,9 @@
           everyone who comes to us!
         </p>
 
-        <button class="button about__button">online-booking</button>
+        <button class="button about__button" data-modal-open>
+          online-booking
+        </button>
       </section>
 
       <section class="prices container section">
@@ -876,5 +850,57 @@
         </li>
       </ul>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="title-h2 title-h2--dark modal__title-h2--dark">
+          We shell call <br />
+          You soon
+        </p>
+        <button class="modal__button" type="button" data-modal-close>
+          <svg class="close-icon" height="36" width="36">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="js-menu-container">
+      <nav class="js-menu-container__navigation">
+        <ul>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li><a href="">Services and prices</a></li>
+          <li><a href="">Barbers</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="js-menu-container__contacts">
+        <a href="" class="js-menu-container__phone">+38 044 111 11 11</a>
+        <button class="button js-menu-container__button">online-booking</button>
+      </div>
+
+      <ul class="js-menu-container__socials-list">
+        <li class="js-menu-container__socials-item">
+          <a href="" class="js-menu-container__socials-link">Instagram</a>
+        </li>
+        <li class="js-menu-container__socials-item">
+          <a href="" class="js-menu-container__socials-link">Youtube</a>
+        </li>
+      </ul>
+
+      <button class="modal__button js-close-menu" type="button">
+        <svg class="close-icon" height="36" width="36">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <div class="js-menu-container__backdrop"></div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
