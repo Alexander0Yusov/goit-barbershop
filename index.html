@@ -28,13 +28,42 @@
         </a>
 
         <svg
-          type="button "
           class="burger-icon js-open-menu"
+          type="button"
           height="40"
           width="40"
         >
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
+
+        <div class="header">
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li>
+                <a href="">About</a>
+              </li>
+              <li><a href="">Services and prices</a></li>
+              <li><a href="">Barbers</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__contacts">
+            <a href="" class="header__phone-link">+38 044 111 11 11</a>
+            <button class="button button--on-dark header__button">
+              online-booking
+            </button>
+          </div>
+
+          <ul class="header__socials-list">
+            <li class="header__socials-item">
+              <a href="" class="header__socials-link">Instagram</a>
+            </li>
+            <li class="header__socials-item">
+              <a href="" class="header__socials-link">Youtube</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -64,28 +93,90 @@
       </section>
 
       <section class="about container section">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <p class="pre-title-slave about__pre-title-slave add-line">about</p>
-        <h2 class="title-h2 title-h2--dark about__title-h2--dark">
-          Best Barbershop in <br />
-          your city
-        </h2>
-        <p class="about__invite">
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p class="about__our-story">
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
+        <div class="about__img-wrap">
+          <picture>
+            <source
+              srcset="
+                ./images/about-1-des-1x.jpg 1x,
+                ./images/about-1-des-2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width:1200px)"
+            />
 
-        <button class="button about__button" data-modal-open>
-          online-booking
-        </button>
+            <source
+              srcset="
+                ./images/about-1-tab-1x.jpg 1x,
+                ./images/about-1-tab-2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width:768px)"
+            />
+
+            <img
+              srcset="
+                ./images/about-1-des-1x.jpg 1x,
+                ./images/about-1-des-2x.jpg 2x
+              "
+              src="./images/about-1-des-1x.jpg"
+              alt="about-1"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./images/about-2-des-1x.jpg 1x,
+                ./images/about-2-des-2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width:1200px)"
+            />
+
+            <source
+              srcset="
+                ./images/about-2-tab-1x.jpg 1x,
+                ./images/about-2-tab-2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width:768px)"
+            />
+
+            <img
+              srcset="
+                ./images/about-2-des-1x.jpg 1x,
+                ./images/about-2-des-2x.jpg 2x
+              "
+              src="./images/about-2-des-1x.jpg"
+              alt="about-2"
+            />
+          </picture>
+        </div>
+
+        <div class="about__text-wrap">
+          <p class="pre-title-slave about__pre-title-slave add-line">about</p>
+
+          <h2 class="title-h2 title-h2--dark about__title-h2--dark">
+            Best Barbershop in <br />
+            your city
+          </h2>
+
+          <p class="about__invite">
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+          </p>
+
+          <p class="about__our-story">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+
+          <button class="button about__button" data-modal-open>
+            online-booking
+          </button>
+        </div>
       </section>
 
       <section class="prices container section">
@@ -757,20 +848,27 @@
             Online-booking
           </h2>
           <form action="" class="contact-form">
-            <p>
-              <input id="name" type="text" class="iput-name" placeholder="0" />
-              <label class="label-name" for="name">name*</label>
-            </p>
+            <div class="form-fields">
+              <p>
+                <input
+                  id="name"
+                  type="text"
+                  class="iput-name"
+                  placeholder="0"
+                />
+                <label class="label-name" for="name">name*</label>
+              </p>
 
-            <p>
-              <input
-                id="phone"
-                type="text"
-                class="iput-phone"
-                placeholder="0"
-              />
-              <label class="label-phone" for="phone">phone*</label>
-            </p>
+              <p>
+                <input
+                  id="phone"
+                  type="text"
+                  class="iput-phone"
+                  placeholder="0"
+                />
+                <label class="label-phone" for="phone">phone*</label>
+              </p>
+            </div>
 
             <p>
               <input
@@ -791,49 +889,65 @@
           <h2 class="title-h2 title-h2--light contacts-thumb__title-h2--light">
             Contacts
           </h2>
-          <address class="contacts__address">
-            <ul class="contacts__address-list">
-              <li class="contacts__address-item">
-                <a
-                  href="https://goo.gl/maps/cmzA5rGcQYwXvtrk7"
-                  class="contacts__address-link"
-                >
-                  <svg
-                    class="socials-list__#icon-map-pin"
-                    height="20"
-                    width="18"
-                  >
-                    <use href="./images/sprite.svg#icon-map-pin"></use>
-                  </svg>
-                  st. Vasilkovaya, 7A Kiev, 02000
-                </a>
-              </li>
-              <li class="contacts__address-item">
-                <a href="tel:+380441111111" class="contacts__address-link">
-                  <svg class="socials-list__#icon-phone" height="20" width="18">
-                    <use href="./images/sprite.svg#icon-phone"></use>
-                  </svg>
-                  +38 044 111 11 11
-                </a>
-              </li>
-              <li class="contacts__address-item">
-                <a
-                  href="email:barbershop@email.com"
-                  class="contacts__address-link"
-                >
-                  <svg class="socials-list__#icon-mail" height="20" width="18">
-                    <use href="./images/sprite.svg#icon-mail"></use>
-                  </svg>
-                  barbershop@email.com
-                </a>
-              </li>
-            </ul>
-          </address>
 
-          <p class="pre-title-master working-hours__pre-title-master add-line">
-            Working hours
-          </p>
-          <p class="working-hours__text">Every day from 9:00 to 22:00</p>
+          <div class="address-worktime-container">
+            <address class="contacts__address">
+              <ul class="contacts__address-list">
+                <li class="contacts__address-item">
+                  <a
+                    href="https://goo.gl/maps/cmzA5rGcQYwXvtrk7"
+                    class="contacts__address-link"
+                  >
+                    <svg
+                      class="socials-list__#icon-map-pin"
+                      height="20"
+                      width="18"
+                    >
+                      <use href="./images/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    st. Vasilkovaya, 7A <br class="divider" />
+                    Kiev, 02000
+                  </a>
+                </li>
+                <li class="contacts__address-item">
+                  <a href="tel:+380441111111" class="contacts__address-link">
+                    <svg
+                      class="socials-list__#icon-phone"
+                      height="20"
+                      width="18"
+                    >
+                      <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__address-item">
+                  <a
+                    href="email:barbershop@email.com"
+                    class="contacts__address-link"
+                  >
+                    <svg
+                      class="socials-list__#icon-mail"
+                      height="20"
+                      width="18"
+                    >
+                      <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+            <div class="working-time-wrap">
+              <p
+                class="pre-title-master working-hours__pre-title-master add-line"
+              >
+                Working hours
+              </p>
+              <p class="working-hours__text">Every day from 9:00 to 22:00</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

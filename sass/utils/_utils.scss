@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   padding: 0 5px;
-  outline: 1px solid tomato;
+  //outline: 1px solid tomato;
 
   width: 100%;
 
@@ -15,6 +15,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    padding: 0 39px;
     width: 768px;
   }
 
@@ -27,8 +28,9 @@
   padding-top: 84px;
   padding-bottom: 84px;
 
-  @media screen and(max-width:1199px) {
-    //padding: 60px 0;
+  @media screen and(min-width:768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 

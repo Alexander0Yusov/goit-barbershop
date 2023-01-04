@@ -5,10 +5,26 @@
 .masters__pre-title-slave {
   margin-left: 80px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 200px;
+  }
 }
 
 .masters__title-h2--dark {
   margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 120px;
+  }
+}
+
+.masters__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .masters__item {

@@ -12,6 +12,26 @@
   @include retina {
     background-image: url("..//../images/hero-bg-mob-2x.jpg");
   }
+
+  @media screen and(min-width:768px) {
+    min-height: 680px;
+    width: 690px;
+
+    background-color: $white;
+    background-image: url("..//../images/hero-bg-tab-1x.jpg");
+    background-size: 90%;
+    background-position-x: 115px;
+
+    @include retina {
+      background-image: url("..//../images/hero-bg-tab-2x.jpg");
+    }
+  }
+}
+
+.hero__wrap {
+  @media screen and(min-width:768px) {
+    margin-left: 240px;
+  }
 }
 
 .hero__title-h1 {
