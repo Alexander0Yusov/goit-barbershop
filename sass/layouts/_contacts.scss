@@ -1,5 +1,16 @@
+.contacts {
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+
 .form-thumb {
   background-color: #191c26;
+
+  @media screen and(min-width:1200px) {
+    margin-right: 0;
+    max-width: 600px;
+  }
 
   input {
     display: block;
@@ -57,6 +68,10 @@
   @media screen and(min-width:768px) {
     text-align: left;
   }
+
+  @media screen and(min-width:1200px) {
+    max-width: 570px;
+  }
 }
 
 .contact-form {
@@ -73,6 +88,12 @@
 
     p {
       width: 330px;
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    p {
+      width: 270px;
     }
   }
 }
@@ -104,6 +125,11 @@
         rgba(23, 26, 36, 0.7)
       ),
       url("..//../images/contacts-bg-mob-2x.png");
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 600px;
+    margin-left: 0;
   }
 }
 

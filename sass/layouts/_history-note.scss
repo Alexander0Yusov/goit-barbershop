@@ -29,6 +29,14 @@
       margin-bottom: 0;
     }
   }
+
+  @media screen and(min-width:1200px) {
+    width: 270px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .history-note__thumb {
