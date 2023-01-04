@@ -15,12 +15,12 @@
 
   @media screen and(min-width:768px) {
     min-height: 680px;
-    width: 690px;
+    width: 768px;
 
     background-color: $white;
     background-image: url("..//../images/hero-bg-tab-1x.jpg");
-    background-size: 90%;
-    background-position-x: 115px;
+    background-size: 75%;
+    background-position-x: calc(115px + 39px);
 
     @include retina {
       background-image: url("..//../images/hero-bg-tab-2x.jpg");
